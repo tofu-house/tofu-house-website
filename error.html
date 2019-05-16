@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title>Tofu House A Digital Design and Marketing Agency</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/gif/png" href="images/tofuhouse.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+    
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-animate-top w3-xxlarge text-black" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-xxlarge w3-padding w3-display-topright hover-effect" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="http://tofuhouse.ca" class="w3-bar-item hover-effect">HOME</a>
+    <a href="http://tofuhouse.ca/about" class="w3-bar-item hover-effect">ABOUT</a>
+    <a href="http://tofuhouse.ca/projects" class="w3-bar-item hover-effect">PROJECTS</a>
+    <a href="http://tofuhouse.ca/contact" class="w3-bar-item hover-effect">CONTACT US</a>
+  </div>
+</nav>
+<!-- Top -->
+<div id="main" class="w3-top navbar">
+  <span id="navLogo" class="w3-padding w3-display-topleft hover-effect1"><a href="http://tofuhouse.ca"><img style="height: auto; width: auto; max-height: 45px; max-width: 45px;"  src="images/logo-green-out.png"></a></span>
+  <span id="navToggle" class="w3-padding w3-display-topright hover-effect1 text-green" onclick="openNav()">MENU</span>
+</div>
+    
+<div id="#whiteBG" class="w3-row w3-content w3-container w3-padding-64 text-black" style="text-align: center">  
+    <h1 class="large-title w3-center text-black"><b>Something messed up</b></h1>
+    <p>ERROR 404: Page not Found. Sorry about that. Feel free to go back to the home page.</p>
+    <a class="hover-effect" href="http://tofuhouse.ca/">Go to Home Page</a>
+    
+</div>
+
+
+<!-- Footer -->
+<footer class="bg-green w3-center w3-padding-64">
+  <img src="images/logo-white.png" class="w3-round w3-image" alt="Table Setting" width="50" height="auto">
+  <div class="w3-xlarge w3-section">
+    <a class="fa fa-twitter w3-hover-opacity" href="https://twitter.com/TofuHouseDesign"></a>
+    <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/tofuhousedesign/"></a>
+  </div>
+</footer>
+    
+<script>
+// Open and close sidebar
+function openNav() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("main").style.display = "none";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("main").style.display = "block";
+}
+</script>
+
+    

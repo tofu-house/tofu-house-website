@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Roboto Mono');
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+
+body, h1,h2,h3,h4,h5, a {
+    font-family: 'Oswald', sans-serif;
+}
+
+p{
+    font-family: 'Oswald', sans-serif;
+}
+
+.large-title{
+    font-size: 2.5em;
+}
+
+body, html {
+    height: 100%;
+    color: white;
+    line-height: 1.8;
+}
+
+a{
+   text-decoration: none;
+}
+
+
+.bold{
+    font-weight: bold;
+}
+
+.hover-effect, .hover-effect:after, .hover-effect:before, 
+.hover-effect1, .hover-effect1:after, .hover-effect1:before, 
+.hover-effect2, .hover-effect2:after, .hover-effect2:before {
+  transition: all .5s;
+}
+
+.hover-effect:hover {
+  background-color: mediumseagreen;
+}
+
+.hover-effect1:hover {
+  opacity: 0.5;
+}
+
+.hover-effect2:hover {
+  color: black;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+p, h6{
+    color:black;
+    font-size: 20px;
+}
+
+.text-black{
+    color: black;
+}
+
+.text-green{
+    color: mediumseagreen;
+}
+
+.center-text{
+    text-align: center;
+}
+.text-white{
+    color: white;
+}
+
+.center-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('../images/thumbnail.PNG');
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url('../images/city-vertical.jpg');
+    min-height: 100%;
+}
+
+
+.bgimg-3 {
+    background-image: url('../images/city-noir.jpeg');
+    min-height: 100%;
+}
+
+.bgimg-4 {
+    background-image: url('../images/startup-photos.png');
+    min-height: 100%;
+}
+
+.bgimg-5 {
+    background-image: url('../images/grass-laptop.jpg');
+        min-height: 100%;
+}
+
+.bgimg-6 {
+    background-image: url('../images/main-mall.jpg');
+    min-height: 100%;  
+}
+
+.bgimg-7 {
+    background-image: url('../images/grass-laptop.jpg');
+    min-height: 75%;  
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+#navLogo {
+  float: left;
+}
+
+#navLogoGreen{
+    display: none;
+}
+
+#navToggle {
+  float: right;
+}
+
+.navbar{ 
+  padding: 5px;
+  margin: 0px;
+  top: 0;
+}
+
+.navbar a{
+   display:inline-table;
+   vertical-align:middle;
+}
+
+.bg-green{
+    background-color: mediumseagreen;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+
+/* Button */
+.button {
+  background-color: mediumseagreen;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  border-radius: 200px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {opacity: 0.6}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+    
+  .fullscreen-bg {
+    background-image: url('../images/thumbnail.PNG');
+    min-height: 100%;
+  }
+
+  .singleservice, .singleserviceb {
+    width: 100%;
+  }
+
+}
+
+.fullscreen-bg {
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.fullscreen-bg__video {
+  min-height: 100%;
+  min-width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.services-wrapper {
+  width: auto;
+  min-height: 400px;
+  padding: 15px;
+}
+
+.service-container {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.singleservice {
+  display: inline-block;
+  width: 250px;
+  height: 300px;
+  background-color: mediumseagreen;
+  padding: 25px;
+  color: white;
+  text-align: left;
+  border-bottom: 5px solid white;
+  vertical-align: top;
+  margin: 5px;
+  transition: .5s ease;
+}
+
+.singleserviceb {
+  display: inline-block;
+  width: 250px;
+  height: 300px;
+  background-color: white;
+  padding: 25px;
+  color: black;
+  text-align: left;
+  border-bottom: 5px solid mediumseagreen;
+  vertical-align: top;
+  margin: 5px;
+  transition: .5s ease;
+}
+
+
+
+.shadow-hover:hover{
+    box-shadow:
+    1px 1px #373737,
+    2px 2px #373737,
+    3px 3px #373737,
+    4px 4px #373737,
+    5px 5px #373737,
+    6px 6px #373737;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    transition: .5s ease;
+}
+
+img.serviceicon {
+  width: 20%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
